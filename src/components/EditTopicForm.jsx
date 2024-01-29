@@ -13,6 +13,8 @@ import React from 'react'
 export const EditTopic = ({item}) => {
   const router = useRouter()
 
+  
+
     async function handleDelete(){
     const res = await fetch("https://v1.appbackend.io/v1/rows/Bu2ayk8udtHu", {
       method: "DELETE",
@@ -38,7 +40,7 @@ export const EditTopic = ({item}) => {
             </div>
             
             <div className="flex gap-4">
-                <Link href={'editTopic/123'}>
+                <Link  href={'/editTopics'}>
                     <HiPencilAlt size={24} />
                 </Link>
             
